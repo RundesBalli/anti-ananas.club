@@ -1,2 +1,4 @@
 # anti-ananas.club
-Die Seite für Ananas-Hasser
+:pineapple: :no_entry_sign:
+
+[Anti-Ananas.Club](https://anti-ananas.club)
