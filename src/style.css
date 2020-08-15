@@ -63,7 +63,7 @@ a {
 }
 
 #footer > a {
-  color: rgba(136,136,136, 0.2);
+  color: rgba(136,136,136, 0.4);
   margin: 0 3px;
   transition: color 0.4s;
 }
