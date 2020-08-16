@@ -55,6 +55,28 @@ a {
   color: #ababab;
 }
 
+@media only screen and (max-width: 800px) {
+  #preamble {
+    display: block;
+    font-size: 5vw;
+    color: #ababab;
+    font-style: italic;
+  }
+
+  #description {
+    display: block;
+    color: #ff4500;
+    font-family: 'fpfont';
+    font-size: 15vw;
+  }
+
+  #wrapper > a {
+    color: rgba(136,136,136, 0.4);
+    transition: color 0.4s;
+    font-size: 3vw;
+  }
+}
+
 #footer {
   position: fixed;
   right: 5px;
