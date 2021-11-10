@@ -20,7 +20,7 @@
     <div id="bgimg"></div>
     <div id="wrapper">
       <div id="preamble">Ananas ist</div>
-      <div id="description"><?php $desc = array("ekelhaft", "widerlich", "Abfall", "kotzfördernd", "Versagerfraß"); echo $desc[array_rand($desc)]; ?></div>
+      <div id="description"><?php $desc = array("ekelhaft", "widerlich", "Abfall", "kotzfördernd", "Versagerfraß", "reudig", "Ranzfraß", "eine Unsitte", "abscheulich", "Nahrung der Unterschicht", "abstoßend", "unerträglich", "Nahrung dritter Klasse", "die Ausgeburt der Hölle", "scheußlich", "entsetzlich", "untragbar", "schändlich", "Kotze zum Essen"); echo $desc[array_rand($desc)]; ?></div>
       <a href="/">↻ reload</a>
     </div>
     <div id="footer">
