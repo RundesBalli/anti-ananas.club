@@ -3,7 +3,7 @@
   <head>
     <title>Anti-Ananas.Club</title>
     <meta charset="utf-8">
-    <meta name="description" content="anti-ananas.club"/>
+    <meta name="description" content="Die Seite für Ananas-Hasser! Zeig jedem, dass du etwas gegen Ananas, Toast- und Pizza-Hawaii und andere Nahrungsmittelverunstaltungen hast!"/>
     <meta name="robots" content="index, follow"/>
     <meta name="keywords" content="Ananas, Pineapple, Anti-Ananas, Anti"/>
     <meta name="revisit-after" content="3 days"/>
@@ -12,9 +12,11 @@
     <meta name="theme-color" content="#000000">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Anti-Ananas.Club">
-    <meta property="og:image" content="https://anti-ananas.club/src/favicon.png">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://anti-ananas.club">
+    <meta property="og:site_name" content="Anti-Ananas.Club">
+    <meta property="og:url" content="https://anti-ananas.club/">
+    <meta property="og:description" content="Die Seite für Ananas-Hasser! Zeig jedem, dass du etwas gegen Ananas, Toast- und Pizza-Hawaii und andere Nahrungsmittelverunstaltungen hast!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://anti-ananas.club/src/ananas.png">
   </head>
   <body>
     <div id="bgimg"></div>
