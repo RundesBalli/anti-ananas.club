@@ -1,3 +1,4 @@
+<?php header("Refresh:4"); ?>
 <!DOCTYPE html>
 <html lang="de">
   <head>
