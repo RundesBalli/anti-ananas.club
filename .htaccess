@@ -1,0 +1,17 @@
+# Disable Indexing
+IndexIgnore *
+
+# Add some security headers
+Header set X-Frame-Options DENY
+Header set X-XSS-Protection "1; mode=block"
+Header set Content-Security-Policy "default-src 'self'"
+Header set X-Content-Type-Options nosniff
+Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
+
+# Enable CORS
+Header set Access-Control-Allow-Origin "*"
+
+# Cache Control
+<FilesMatch "\.(jpg|jpeg|png|gif|html|js|css|eot|svg|ttf|woff|woff2)$">
+  Header set Cache-Control "max-age=86400, public"
+</FilesMatch>
