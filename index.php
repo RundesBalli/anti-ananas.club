@@ -1,4 +1,3 @@
-<?php header("Refresh:4"); ?>
 <!DOCTYPE html>
 <html lang="de">
   <head>
@@ -29,5 +28,6 @@
     <div id="footer">
       <span>Ein Projekt von: <a href="https://RundesBalli.com/" target="_blank" rel="noopener">RundesBalli.com</a><a href="https://RundesBalli.com/imprint" target="_blank" rel="noopener">Imprint</a></span><span>Sources: <a href="https://github.com/RundesBalli/anti-ananas.club" target="_blank" rel="noopener">GitHub</a><a href="https://www.dafont.com/de/fair-prosper.font" target="_blank" rel="noopener">Font</a></span><span>ketzerische Gegenbewegung: <a href="https://anti-anti-ananas.club" target="_blank" rel="noopener">anti-anti-ananas.club</a></span>
     </div>
+    <script type="text/javascript" src="/src/reload.js"></script>
   </body>
 </html>
