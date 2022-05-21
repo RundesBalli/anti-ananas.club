@@ -1,9 +1,17 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/src/Roboto-Regular.ttf");
+}
+
 html, body {
   padding: 0px;
   margin: 0px;
   width: 100%;
   height: 100%;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #888888;
   background: #000000;
 }
