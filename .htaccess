@@ -13,5 +13,5 @@ Header set Access-Control-Allow-Origin "*"
 
 # Cache Control
 <FilesMatch "\.(jpg|jpeg|png|gif|html|js|css|eot|svg|ttf|woff|woff2)$">
-  Header set Cache-Control "max-age=86400, public"
+  Header set Cache-Control "max-age=3600, public"
 </FilesMatch>
