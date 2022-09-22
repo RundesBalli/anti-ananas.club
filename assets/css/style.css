@@ -15,6 +15,7 @@ html, body {
   color: #888888;
   background: #1e1e1e;
   user-select: none;
+  text-shadow: 1px 2px 1px #000;
 }
 
 * {
@@ -41,6 +42,7 @@ a {
   font-size: 2em;
   color: #ababab;
   font-style: italic;
+  text-shadow: 2px 2px 3px #000000;
 }
 
 @font-face {
@@ -53,6 +55,7 @@ a {
   color: #ff4500;
   font-family: 'fpfont';
   font-size: 8em;
+  text-shadow: 3px 3px 5px #3344ff;
 }
 
 #wrapper > a {
