@@ -13,7 +13,7 @@ html, body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
   color: #888888;
-  background: #1e1e1e;
+  background: url(/assets/images/ananasBG.png), #1e1e1e;
   user-select: none;
   text-shadow: 1px 2px 1px #000;
 }
