@@ -10,5 +10,6 @@ $routes = [
   /**
    * Pages
    */
+  'phrase' => 'phrase.php',
 ];
 ?>
