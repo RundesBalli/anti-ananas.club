@@ -15,3 +15,13 @@ Header set Access-Control-Allow-Origin "*"
 <FilesMatch "\.(jpg|jpeg|png|gif|html|js|css|eot|svg|ttf|woff|woff2)$">
   Header set Cache-Control "max-age=3600, public"
 </FilesMatch>
+
+# Rewrite engine
+RewriteEngine On
+
+# If the URL is a file or directory, then ignore the following rules.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rules for everything
+RewriteRule ^([a-z-\d]+)$ /index.php?page=$1 [NC,L,QSA]
