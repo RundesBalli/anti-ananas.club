@@ -28,6 +28,10 @@ $phrases = [
   ],
   [
     'Ananas ist',
+    'Versagerobst',
+  ],
+  [
+    'Ananas ist',
     'räudig',
   ],
   [
