@@ -15,6 +15,6 @@ $output = preg_replace(
     $randomPhrase['message'],
     $footer,
   ),
-  $template,
+  $template
 );
 ?>
