@@ -4,17 +4,18 @@
  * 
  * Generates the output with previous generated contents.
  */
+$randomKey = array_rand($phrases);
 $output = preg_replace(
-  array(
+  [
     '/{PREAMBLE}/im',
     '/{MESSAGE}/im',
-    '/{FOOTER}/im'
-  ),
-  array(
-    $randomPhrase['preamble'],
-    $randomPhrase['message'],
+    '/{FOOTER}/im',
+  ],
+  [
+    $phrases[$randomKey][0],
+    $phrases[$randomKey][1],
     $footer,
-  ),
+  ],
   $template
 );
 ?>
