@@ -21,7 +21,7 @@
   <body>
     <div id="wrapper">
       <div id="preamble">Ananas ist</div>
-      <div id="description"><?php $desc = array("ekelhaft", "widerlich", "Abfall", "kotzfördernd", "Versagerfraß", "räudig", "Ranzfraß", "eine Unsitte", "abscheulich", "Nahrung der Unterschicht", "abstoßend", "unerträglich", "Nahrung dritter Klasse", "die Ausgeburt der Hölle", "scheußlich", "entsetzlich", "untragbar", "schändlich", "Kotze zum Essen", "doof", "wertloser Müll", "Schund"); echo $desc[array_rand($desc)]; ?></div>
+      <div id="message"><?php $desc = array("ekelhaft", "widerlich", "Abfall", "kotzfördernd", "Versagerfraß", "räudig", "Ranzfraß", "eine Unsitte", "abscheulich", "Nahrung der Unterschicht", "abstoßend", "unerträglich", "Nahrung dritter Klasse", "die Ausgeburt der Hölle", "scheußlich", "entsetzlich", "untragbar", "schändlich", "Kotze zum Essen", "doof", "wertloser Müll", "Schund"); echo $desc[array_rand($desc)]; ?></div>
       <a href="/">↻ reload</a>
     </div>
     <div id="footer">
