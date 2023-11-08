@@ -1,23 +1,32 @@
-let loadPhrase = () => {
-  fetch(`/phrase`, { mode: "cors" })
-      .then(res => res.json())
-      .then(data => {
-          document.getElementById("preamble").textContent = data.preamble;
-          document.getElementById("message").textContent = data.message;
-      });
-}
+"use strict";
 
 let doReload = true;
+
+const loadPhrase = () => {
+  fetch("/phrase", { mode: "cors" })
+      .then(res => res.json())
+      .then(data => {
+          const preamble = document.getElementById("preamble");
+          if (preamble) preamble.textContent = data.preamble;
+
+          const msg = document.getElementById("message")
+          if (msg) msg.textContent = data.message;
+      });
+};
 
 window.onblur = () => (doReload = false);
 window.onfocus = () => (doReload = true);
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("reload").addEventListener("click", (e) => {
-    loadPhrase();
-  });
+  const reloadBtn = document.getElementById("reload");
+  if (!reloadBtn) return;
+  reloadBtn.addEventListener("click", () => loadPhrase());
 });
 
-setInterval(() => {
-  if (doReload) loadPhrase();
-}, 5000);
+(() => {
+  setInterval(() => {
+    if (doReload) loadPhrase();
+  }, 5000);
+
+  loadPhrase();
+})();
