@@ -1,5 +1,7 @@
 "use strict";
 
+// With <3 from NullDev
+
 /**
  * Loads a new phrase from the server and displays it on the page.
  * Handle the progress bar, interval and reload button.
@@ -36,7 +38,7 @@ class PhraseLoader {
    * Fills the progress bar.
    *
    * @param {boolean} [reset=false] - Whether to reset the progress bar.
-   * @return {void} 
+   * @return {void}
    * @memberof PhraseLoader
    */
   fillBar(reset = false){
@@ -48,7 +50,7 @@ class PhraseLoader {
 
     bar.style.width = `${this.currentProgressWidth}%`;
     this.progressInterval = setInterval(() => {
-      if (this.currentProgressWidth >= 100) {
+      if (this.currentProgressWidth >= 100){
         this.#clearProgressInterval();
         this.currentProgressWidth = 1;
         bar.style.width = `${this.currentProgressWidth}%`;
@@ -69,7 +71,10 @@ class PhraseLoader {
    * @memberof PhraseLoader
    */
   loadPhrase(reset = false, init = false){
-    if (init) return this.fillBar(true);
+    if (init){
+        this.fillBar(true);
+        return;
+    }
 
     fetch("/phrase", { mode: "cors" })
       .then(res => res.json())
