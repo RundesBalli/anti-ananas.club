@@ -15,11 +15,12 @@ class PhraseLoader {
    * @memberof PhraseLoader
    */
   constructor(options = {}){
-    const { steps } = options;
+    const { duration } = options;
+    const steps = Math.floor((duration ?? 5000) / 100);
 
     this.progressInterval = null;
     this.currentProgressWidth = 1;
-    this.steps = steps ?? 50;
+    this.steps = steps;
 
     window.onblur = () => this.#clearProgressInterval();
     window.onfocus = () => this.fillBar();
@@ -104,6 +105,7 @@ class PhraseLoader {
 }
 
 (() => {
-  const phaseLoader = new PhraseLoader({ steps: 50 });
+  // Duration is in milliseconds
+  const phaseLoader = new PhraseLoader({ duration: 5000 });
   document.addEventListener("DOMContentLoaded", () => phaseLoader.initialize());
 })();
