@@ -67,7 +67,9 @@ class PhraseLoader {
    * @param {boolean} [reset=false] - Whether to reset the progress bar.
    * @memberof PhraseLoader
    */
-  loadPhrase(reset = false){
+  loadPhrase(reset = false, init = false){
+    if (init) return this.fillBar(true);
+
     fetch("/phrase", { mode: "cors" })
       .then(res => res.json())
       .then(data => {
@@ -91,7 +93,7 @@ class PhraseLoader {
     const reloadBtn = document.getElementById("reload");
     if (reloadBtn) reloadBtn.addEventListener("click", () => this.loadPhrase(true));
 
-    this.loadPhrase();
+    this.loadPhrase(false, true);
   }
 }
 

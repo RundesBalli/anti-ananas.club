@@ -20,8 +20,8 @@
   </head>
   <body>
     <div id="wrapper">
-      <div id="preamble"></div>
-      <div id="message"></div>
+      <div id="preamble">{PREAMBLE}</div>
+      <div id="message">{MESSAGE}</div>
       <div id="progress"><div id="bar"></div></div>
       <a id="reload">↻ reload</a>
     </div>
