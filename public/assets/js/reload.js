@@ -21,8 +21,6 @@ class PhraseLoader {
 
     window.onblur = () => this.#clearProgressInterval();
     window.onfocus = () => this.fillBar();
-
-    document.addEventListener("DOMContentLoaded", this.initialize.bind(this));
   }
 
   /**
