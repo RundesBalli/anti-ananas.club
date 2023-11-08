@@ -65,6 +65,7 @@ class PhraseLoader {
    * Loads a new phrase from the server and displays it on the page.
    *
    * @param {boolean} [reset=false] - Whether to reset the progress bar.
+   * @param {boolean} [init=false] - Whether its the initial load without fetch.
    * @memberof PhraseLoader
    */
   loadPhrase(reset = false, init = false){
