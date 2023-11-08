@@ -22,6 +22,7 @@
     <div id="wrapper">
       <div id="preamble"></div>
       <div id="message"></div>
+      <div id="progress"><div id="bar"></div></div>
       <a id="reload">↻ reload</a>
     </div>
     <div id="footer">
