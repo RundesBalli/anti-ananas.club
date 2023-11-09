@@ -68,6 +68,25 @@ a {
   color: rgba(136,136,136, 0.4);
   transition: color 0.4s;
   font-size: 1em;
+  position: relative;
+  top: 15px;
+}
+
+#wrapper > div#progress {
+  width: 50%;
+  position: relative;
+  height: 5px;
+  background: #141414;
+  margin: 10px auto 15px auto;
+  border-radius: 40px;
+}
+
+#wrapper > div#progress > #bar {
+  position: relative;
+  height: 100%;
+  background: #a9a9a9;
+  width: 0%;
+  border-radius: 40px;
 }
 
 #wrapper > a:hover, #wrapper > a:focus {
