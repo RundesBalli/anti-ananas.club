@@ -106,6 +106,6 @@ class PhraseLoader {
 
 (() => {
   // Duration is in milliseconds
-  const phaseLoader = new PhraseLoader({ duration: 5000 });
-  document.addEventListener("DOMContentLoaded", () => phaseLoader.initialize());
+  const phraseLoader = new PhraseLoader({ duration: 5000 });
+  document.addEventListener("DOMContentLoaded", () => phraseLoader.initialize());
 })();
