@@ -1,3 +1,35 @@
+:root {
+  /**
+   * General
+   */
+  --fontSize: 1em;
+  --transitionTime: 0.3s;
+  --bgImage: url('/assets/images/ananasBG.png');
+  --bgColor: #1e1e1e;
+  --backgroundAnimationTime: 15s;
+  --fontColor: #888888;
+  --shadowColor: rgba(0, 0, 0, 0.8);
+
+  /**
+   * Messages
+   */
+  --preambleColor: #ababab;
+  --messageColor: #ff4500;
+  --messageGlow: #3344ff;
+
+  /**
+   * Links
+   */
+  --wrapperLinkColor: rgba(136, 136, 136, 0.4);
+  --wrapperLinkHover: #ababab;
+
+  /**
+   * Progressbar
+   */
+  --progressbarBackground: #141414;
+  --progressbarBarBackground: #a9a9a9;
+}
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -12,11 +44,15 @@ html, body {
   width: 100%;
   height: 100%;
   font-family: 'Roboto', sans-serif;
-  color: #888888;
-  background: url(/assets/images/ananasBG.png), #1e1e1e;
+  color: var(--fontColor);
+  background: var(--bgColor);
   user-select: none;
-  text-shadow: 1px 2px 1px #000;
-  animation: bgAnimate linear 15s infinite;
+  text-shadow: 1px 2px 1px var(--shadowColor);
+}
+
+body {
+  background: var(--bgImage), var(--bgColor);
+  animation: bgAnimate linear var(--backgroundAnimationTime) infinite;
 }
 
 @keyframes bgAnimate {
@@ -45,10 +81,10 @@ a {
 
 #preamble {
   display: block;
-  font-size: 2em;
-  color: #ababab;
+  font-size: calc(var(--fontSize) * 2);
+  color: var(--preambleColor);
   font-style: italic;
-  text-shadow: 2px 2px 3px #000000;
+  text-shadow: 2px 2px 3px var(--shadowColor);
 }
 
 @font-face {
@@ -58,25 +94,29 @@ a {
 
 #message {
   display: block;
-  color: #ff4500;
+  color: var(--messageColor);
   font-family: 'fpfont';
-  font-size: 8em;
-  text-shadow: 3px 3px 5px #3344ff;
+  font-size: calc(var(--fontSize) * 8);
+  text-shadow: 3px 3px 5px var(--messageGlow);
 }
 
 #wrapper > a {
-  color: rgba(136,136,136, 0.4);
-  transition: color 0.4s;
-  font-size: 1em;
+  color: var(--wrapperLinkColor);
+  transition: color var(--transitionTime);
+  font-size: var(--fontSize);
   position: relative;
-  top: 15px;
+  top: var(--fontSize);
+}
+
+#wrapper > a:hover, #wrapper > a:focus {
+  color: var(--wrapperLinkHover);
 }
 
 #wrapper > div#progress {
   width: 50%;
   position: relative;
   height: 5px;
-  background: #141414;
+  background: var(--progressbarBackground);
   margin: 10px auto 15px auto;
   border-radius: 40px;
 }
@@ -84,33 +124,24 @@ a {
 #wrapper > div#progress > #bar {
   position: relative;
   height: 100%;
-  background: #a9a9a9;
+  background: var(--progressbarBarBackground);
   width: 0%;
   border-radius: 40px;
-}
-
-#wrapper > a:hover, #wrapper > a:focus {
-  color: #ababab;
 }
 
 @media only screen and (max-width: 800px) {
   #preamble {
     display: block;
     font-size: 5vw;
-    color: #ababab;
     font-style: italic;
   }
 
   #message {
     display: block;
-    color: #ff4500;
-    font-family: 'fpfont';
     font-size: 15vw;
   }
 
   #wrapper > a {
-    color: rgba(136,136,136, 0.4);
-    transition: color 0.4s;
     font-size: 3vw;
   }
 }
@@ -119,19 +150,19 @@ a {
   position: fixed;
   width: 100%;
   text-align: center;
-  bottom: 5px;
-  font-size: 10px;
+  bottom: calc(var(--fontSize) * 0.5);
+  font-size: calc(var(--fontSize) * 0.7);
 }
 
 #footer > span {
-  margin: 0px 10px;
+  margin: 0px calc(var(--fontSize) * 0.7);
   display: inline-block;
 }
 
 #footer > span > a {
-  color: #888888;
-  transition: all 0.4s;
-  padding: 0px 5px;
+  color: var(--fontColor);
+  transition: all var(--transitionTime);
+  padding: 0px calc(var(--fontSize) * 0.5);
 }
 
 #footer > span > a.linkNoUnderline {
@@ -139,15 +170,15 @@ a {
 }
 
 .flag {
-  height: calc(var(--fontSize) * 0.6);
+  height: calc(var(--fontSize) * 0.8);
   cursor: pointer;
 }
 
 #footer > span > a:not(:first-child) {
-  border-left: 1px solid #888888;
+  border-left: 1px solid var(--fontColor);
 }
 
 #footer > span > a:hover, #footer > span > a:focus {
-  color: #ff4500;
+  color: var(--messageColor);
   text-decoration: underline;
 }
