@@ -12,6 +12,7 @@ $routes = [
    */
   'main' => 'main.php',
   'phrase' => 'phrase.php',
+  'info' => 'info.php',
   'changeLocale' => 'changeLocale.php',
 ];
 ?>
