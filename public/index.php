@@ -3,7 +3,7 @@
  * Anti-Ananas.Club
  * 
  * @author    RundesBalli <GitHub@RundesBalli.com>
- * @copyright 2023 RundesBalli
+ * @copyright 2024 RundesBalli
  * @version   2.0
  * @see       https://github.com/RundesBalli/anti-ananas.club
  */
