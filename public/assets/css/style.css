@@ -68,6 +68,12 @@ a {
   outline: none;
   text-decoration: none;
   cursor: pointer;
+  color: var(--messageColor);
+  transition: all var(--transitionTime);
+}
+
+a:hover {
+  color: var(--messageGlow);
 }
 
 #wrapper {
