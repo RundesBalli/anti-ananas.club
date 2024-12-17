@@ -12,6 +12,12 @@ require_once(__DIR__.DIRECTORY_SEPARATOR.'config.php');
 require_once(__DIR__.DIRECTORY_SEPARATOR.'constants.php');
 
 /**
+ * Locale
+ */
+require_once(__DIR__.DIRECTORY_SEPARATOR.'generation'.DIRECTORY_SEPARATOR.'locale.php');
+require_once(__DIR__.DIRECTORY_SEPARATOR.'locales'.DIRECTORY_SEPARATOR.$locale.'.php');
+
+/**
  * Content generation and router
  */
 require_once(__DIR__.DIRECTORY_SEPARATOR.'phrases.php');
