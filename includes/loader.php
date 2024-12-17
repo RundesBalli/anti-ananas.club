@@ -6,6 +6,12 @@
  */
 
 /**
+ * Basic configuration
+ */
+require_once(__DIR__.DIRECTORY_SEPARATOR.'config.php');
+require_once(__DIR__.DIRECTORY_SEPARATOR.'constants.php');
+
+/**
  * Content generation and router
  */
 require_once(__DIR__.DIRECTORY_SEPARATOR.'phrases.php');
