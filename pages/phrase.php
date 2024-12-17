@@ -6,9 +6,9 @@
  */
 
 header('Content-Type: application/json');
-$randomKey = array_rand($phrases);
+$randomKey = array_rand($lang['phrases']);
 die(json_encode([
-  'preamble' => $phrases[$randomKey][0],
-  'message' => $phrases[$randomKey][1],
+  'preamble' => $lang['phrases'][$randomKey][0],
+  'message' => $lang['phrases'][$randomKey][1],
 ]));
 ?>
