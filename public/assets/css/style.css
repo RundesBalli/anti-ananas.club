@@ -134,6 +134,15 @@ a {
   padding: 0px 5px;
 }
 
+#footer > span > a.linkNoUnderline {
+  text-decoration: none;
+}
+
+.flag {
+  height: calc(var(--fontSize) * 0.6);
+  cursor: pointer;
+}
+
 #footer > span > a:not(:first-child) {
   border-left: 1px solid #888888;
 }
