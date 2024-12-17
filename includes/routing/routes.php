@@ -10,6 +10,7 @@ $routes = [
   /**
    * Pages
    */
+  'main' => 'main.php',
   'phrase' => 'phrase.php',
   'changeLocale' => 'changeLocale.php',
 ];
