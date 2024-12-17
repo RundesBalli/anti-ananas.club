@@ -20,14 +20,11 @@
   </head>
   <body>
     <div id="wrapper">
-      <div id="preamble">{PREAMBLE}</div>
-      <div id="message">{MESSAGE}</div>
-      <div id="progress"><div id="bar"></div></div>
-      <a id="reload">↻ reload</a>
+      {CONTENT}
     </div>
     <div id="footer">
       {FOOTER}
     </div>
-    <script type="text/javascript" src="/assets/js/reload.js"></script>
+    {RELOADJS}
   </body>
 </html>

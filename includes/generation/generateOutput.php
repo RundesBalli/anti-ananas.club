@@ -7,14 +7,14 @@
 $randomKey = array_rand($phrases);
 $output = preg_replace(
   [
-    '/{PREAMBLE}/im',
-    '/{MESSAGE}/im',
+    '/{CONTENT}/im',
     '/{FOOTER}/im',
+    '/{RELOADJS}/im',
   ],
   [
-    $phrases[$randomKey][0],
-    $phrases[$randomKey][1],
+    $content,
     $footer,
+    ($reloadjs ? '<script type="text/javascript" src="/assets/js/reload.js"></script>' : NULL),
   ],
   $template
 );
