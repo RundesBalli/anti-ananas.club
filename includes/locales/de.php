@@ -12,7 +12,7 @@ $lang = [
     'satire' => 'Ein Satireprojekt von',
     'imprint' => 'Impressum',
     'info' => 'Info',
-    'antiAnti' => 'ketzerische Gegenbewegung', # Title for the anti-anti-ananas.club
+    'antiAnti' => 'Ketzerische Gegenbewegung', # Title for the anti-anti-ananas.club
 
     /**
      * Title description for the flags
