@@ -4,6 +4,10 @@
  * 
  * Router for the requested page.
  */
+
+ /**
+ * No error occurred so far. Find out which page was requested and if the requested page matches the pattern.
+ */
 if(!empty($_GET['page']) AND preg_match('/([a-z-\d]+)/i', $_GET['page'], $pageMatch) === 1) {
   /**
    * Check if the requested page exist in the routes.
@@ -13,27 +17,45 @@ if(!empty($_GET['page']) AND preg_match('/([a-z-\d]+)/i', $_GET['page'], $pageMa
      * The route exists. Include the file.
      */
     $route = $pageMatch[1];
-    $fileToInclude = __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'pages'.DIRECTORY_SEPARATOR.$routes[$route];
-    if(!file_exists($fileToInclude)) {
+    $fileToInclude = PAGE_INCLUDE_DIR.$routes[$route];
+    if(file_exists($fileToInclude)) {
+      /**
+       * File exists
+       */
+      require_once($fileToInclude);
+    } else {
       /**
        * File doesn't exist.
        */
-      header('Location: /'); die();
+      http_response_code(500);
+      echo '<h1>500 - Internal Server Error</h1>';
+      die();
     }
+  } else {
+    /**
+     * The requested page doesn't exist in the routes.
+     */
+    header('Location: /');
+    die();
+  }
+} else {
+  /**
+   * No page was requested or the requested page doesn't match the pattern.
+   */
+  $route = 'main';
+  $fileToInclude = PAGE_INCLUDE_DIR.$routes[$route];
+  if(file_exists($fileToInclude)) {
     /**
      * File exists
      */
     require_once($fileToInclude);
   } else {
     /**
-     * The requested page doesn't exist in the routes.
+     * File doesn't exist.
      */
-    header('Location: /'); die();
+    http_response_code(500);
+    echo '<h1>500 - Internal Server Error</h1>';
+    die();
   }
-} else {
-  /**
-   * No page was requested or the requested page doesn't match the pattern.
-   * So the main page is requested. Do not include anything.
-   */
 }
 ?>
