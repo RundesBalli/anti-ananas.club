@@ -25,4 +25,5 @@ if(empty($_COOKIE[$cookieName['locale']])) {
     $locale = $defaultLocale;
   }
 }
+setcookie($cookieName['locale'], $locale, time()+COOKIE_DURATION, NULL, NULL, TRUE, TRUE);
 ?>
