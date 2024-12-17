@@ -4,7 +4,6 @@
  * 
  * Generates the output with previous generated contents.
  */
-$randomKey = array_rand($phrases);
 $output = preg_replace(
   [
     '/{LANG}/im',
