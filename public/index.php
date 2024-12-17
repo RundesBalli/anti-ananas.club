@@ -9,6 +9,12 @@
  */
 
 /**
+ * Initialize some variables
+ */
+$content = '';
+$reloadjs = FALSE;
+
+/**
  * Including the configuration and function loader, the page generation elements, the router and the output generation.
  */
 require_once(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'includes'.DIRECTORY_SEPARATOR.'loader.php');
