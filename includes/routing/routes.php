@@ -11,5 +11,6 @@ $routes = [
    * Pages
    */
   'phrase' => 'phrase.php',
+  'changeLocale' => 'changeLocale.php',
 ];
 ?>
