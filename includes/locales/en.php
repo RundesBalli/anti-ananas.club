@@ -12,7 +12,7 @@ $lang = [
     'satire' => 'A satire project by',
     'imprint' => 'Imprint',
     'info' => 'Info',
-    'antiAnti' => 'Heretical countermovement', # Title for the anti-anti-ananas.club
+    'antiAnti' => 'Heretical countermovement (German)', # Title for the anti-anti-ananas.club
 
     /**
      * Title description for the flags
@@ -71,15 +71,11 @@ $lang = [
     ],
     [
       'Pineapple is',
-      'a bad taste',
+      'a tasting awful',
     ],
     [
       'Pineapple is',
       'hideous',
-    ],
-    [
-      'Pineapple is',
-      'food for the lower class',
     ],
     [
       'Pineapple is',
@@ -119,7 +115,7 @@ $lang = [
     ],
     [
       'Pineapple is',
-      'vomit for dinner',
+      'ruining any dinner',
     ],
     [
       'Pineapple is',
@@ -138,8 +134,8 @@ $lang = [
       'trash',
     ],
     [
-      'Ananas riecht wie',
-      'vomit',
+      'Pineapple',
+      'smells like vomit',
     ],
     [
       'Toast-Hawaii',
