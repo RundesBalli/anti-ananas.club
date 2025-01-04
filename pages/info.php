@@ -12,4 +12,5 @@ $content.= '<p>This is only satire for fun. Feel free to share or <a href="https
 $content.= '<h2>Sources</h2>';
 $content.= '<p><a href="https://fonts.google.com/specimen/Roboto" target="_blank" rel="noopener">Roboto font</a></p>';
 $content.= '<p><a href="https://www.dafont.com/de/fair-prosper.font" target="_blank" rel="noopener">Fair Prosper font</a></p>';
+$content.= '<p><a href="https://github.com/lipis/flag-icons" target="_blank" rel="noopener">Flag icons</a></p>';
 ?>
